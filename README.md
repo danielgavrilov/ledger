@@ -17,6 +17,7 @@ ledger.get_all_balances(before='2015-01-17')
 # get the balance for a specific entity
 ledger.get_balance('mary', before='2015-01-17')
 
-# In both cases, the `before` argument is optional. Not supplying it considers
-# every transaction made.
+# In both cases, the (optional) `before` argument filters out 
+# any transactions made on or after the supplied date. Not 
+# supplying it considers every transaction made.
 ```
